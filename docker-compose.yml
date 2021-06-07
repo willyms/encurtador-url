@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+  postgres-app:
+    image: "postgres:9.6-alpine"
+    container_name: postgres-app
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=localhost
+      - POSTGRES_USER=userurl
+      - POSTGRES_PASSWORD=passurl
+  encurtadourl-app:
+    build: ./
+    container_name: encurtadourl-app
+    depends_on:
+      - postgres-app
+    environment:
+      - DB_SERVER=postgres-app
+      - POSTGRES_DB=dburl
+      - POSTGRES_USER=userurl
+      - POSTGRES_PASSWORD=passurl
+    ports:
+      - 8080:8080
+    
