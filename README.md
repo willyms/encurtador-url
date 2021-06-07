@@ -56,6 +56,6 @@ Este aplicativo também é colocado no contêiner do Docker e as suas definiçõ
 
 PS: IU Swagger, não fazer o redirecionamento externo do link da página vinculado, para redireciona para o link da página digite na barra de endereço do navegador. Ex. `http://localhost:8080/urls/xdqzgQ5N9s`
 
-![image01](https://github.com/willyms/Encurtador-de-URL/blob/master/ui-swagger.png)
+![image01](https://github.com/willyms/encurtador-url/blob/main/ui-swagger.png)
 ---
 @Willyms
